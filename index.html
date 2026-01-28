@@ -1,76 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>VOTE AA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VOTE ASHDRES</title>
 
-<style>
-* { box-sizing: border-box; }
+  <style>
+    * { box-sizing: border-box; }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-  background: #f6e3c8;
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6e3c8;
+    }
 
-h3 {
-  text-align: center;
-  margin: 10px 0;
-  font-weight: 600;
-}
+    h3 {
+      text-align: center;
+      margin: 10px 0;
+      font-weight: bold;
+    }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  padding: 10px;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2x2 = 4 */
+      gap: 10px;
+      padding: 10px;
+    }
 
-.frame {
-  position: relative;
-}
-
-.frame::after {
-  content: "ACTIVE";
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  font-size: 9px;
-  padding: 2px 6px;
-  background: rgba(0,0,0,.6);
-  color: #7CFF7C;
-  border-radius: 8px;
-  pointer-events: none;
-}
-
-iframe {
-  width: 100%;
-  height: 420px; /* mas kita sa iOS */
-  border-radius: 16px;
-  border: 2px solid #e0caa5;
-  background: #fff;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* tap feedback */
-.frame:active iframe,
-.frame:focus-within iframe {
-  border-color: #7CFF7C;
-  box-shadow: 0 0 0 3px rgba(124,255,124,.4);
-}
-</style>
+    iframe {
+      width: 100%;
+      height: 320px; /* mas light for iOS */
+      border-radius: 14px;
+      border: 1px solid #e0caa5;
+      background: #fff;
+    }
+  </style>
 </head>
 
 <body>
-<h3>VOTE AA (iOS Stable)</h3>
+  <h3>VOTE ASHDRES</h3>
 
-<div class="grid">
-  <div class="frame"><iframe src="https://vote-aa.vercel.app/"></iframe></div>
-  <div class="frame"><iframe src="https://vote-aa.vercel.app/"></iframe></div>
-  <div class="frame"><iframe src="https://vote-aa.vercel.app/"></iframe></div>
-  <div class="frame"><iframe src="https://vote-aa.vercel.app/"></iframe></div>
-</div>
-
+  <div class="grid">
+    <iframe src="https://vote-five-virid.vercel.app/" loading="lazy"></iframe>
+    <iframe src="https://vote-five-virid.vercel.app/" loading="lazy"></iframe>
+    <iframe src="https://vote-five-virid.vercel.app/" loading="lazy"></iframe>
+    <iframe src="https://vote-five-virid.vercel.app/" loading="lazy"></iframe>
+  </div>
 </body>
 </html>
